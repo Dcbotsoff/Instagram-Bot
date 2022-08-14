@@ -40,16 +40,16 @@ insta = Config.L
 buttons=InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton("👨🏼‍💻Developer", url='https://t.me/subinps'),
-            InlineKeyboardButton("🤖Other Bots", url="https://t.me/subin_works/122")
+            InlineKeyboardButton("👨🏼‍💻Developer", url='https://t.me/selfiebd'),
+            InlineKeyboardButton("🤖Other Bots", url="https://t.me/GroupDcBots/23")
         ],
         [
-            InlineKeyboardButton("🔗Source Code", url="https://github.com/subinps/Instagram-Bot"),
-            InlineKeyboardButton("🧩Deploy Own Bot", url="https://heroku.com/deploy?template=https://github.com/subinps/Instagram-Bot")
+            InlineKeyboardButton("🔗Source Code", url="https://github.com/dcbotsoff/Instagram-Bot"),
+            InlineKeyboardButton("🧩Deploy Own Bot", url="https://heroku.com/deploy?template=https://github.com/dcbotsoff/Instagram-Bot")
         ],
         [
             InlineKeyboardButton("👨🏼‍🦯How To Use?", callback_data="help#subin"),
-            InlineKeyboardButton("⚙️Update Channel", url="https://t.me/subin_works")
+            InlineKeyboardButton("⚙️Update Channel", url="https://t.me/GroupDcBots/23")
         ]
 					
     ]
@@ -70,7 +70,7 @@ async def post(bot, message):
     text=message.text
     username=USER
     if 1 not in STATUS:
-        await message.reply_text("You Must Login First /login ")
+        await message.reply_text("You Must Login First /login . Make a fake account): allowed.")
         return
     if " " in text:
         cmd, username = text.split(' ')
